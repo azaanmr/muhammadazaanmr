@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <title>Muhammad Azaan M R — Android & Software Developer</title>
 
     <meta name="description"
-          content="Muhammad Azaan M R — Android and software developer building practical, privacy-focused utility applications.">
+          content="Muhammad Azaan M R — Android and software developer building practical applications, useful software and modern websites.">
 
     <meta name="author" content="Muhammad Azaan M R">
     <meta name="theme-color" content="#0b0d10">
@@ -20,7 +21,7 @@
           content="Muhammad Azaan M R — Android & Software Developer">
 
     <meta property="og:description"
-          content="Android and software developer building practical, privacy-focused utility applications.">
+          content="Android and software developer building practical applications, useful software and modern websites.">
 
     <meta property="og:url"
           content="https://azaanmr.github.io/">
@@ -325,13 +326,13 @@
 
 
         /* =========================
-           APPLICATIONS
+           PROJECT GRID
         ========================= */
 
         .apps {
             display: grid;
 
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
 
             gap: 18px;
         }
@@ -349,7 +350,7 @@
             display: flex;
             flex-direction: column;
 
-            min-height: 360px;
+            min-height: 370px;
 
             transition:
                 transform 0.25s ease,
@@ -365,10 +366,10 @@
 
 
         .app-icon {
-            width: 52px;
-            height: 52px;
+            width: 72px;
+            height: 72px;
 
-            border-radius: 13px;
+            border-radius: 17px;
 
             background: var(--bg-secondary);
 
@@ -379,9 +380,19 @@
             align-items: center;
             justify-content: center;
 
-            font-size: 22px;
-
             margin-bottom: 25px;
+
+            overflow: hidden;
+        }
+
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
         }
 
 
@@ -442,6 +453,52 @@
 
         .app-link:hover {
             color: var(--accent-hover);
+        }
+
+
+        /* =========================
+           WEBSUNeed
+        ========================= */
+
+        .websuneed-card {
+            grid-column: 1 / -1;
+
+            min-height: 300px;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(0, 190, 255, 0.08),
+                    transparent 35%
+                ),
+                var(--card);
+        }
+
+
+        .websuneed-logo {
+            width: fit-content;
+
+            font-size: 28px;
+            font-weight: 800;
+
+            letter-spacing: -1.5px;
+
+            margin-bottom: 24px;
+        }
+
+
+        .websuneed-logo .blue {
+            color: #16d9ee;
+        }
+
+
+        .websuneed-logo .white {
+            color: #f3f5f7;
+        }
+
+
+        .websuneed-logo .accent {
+            color: #357dff;
         }
 
 
@@ -650,6 +707,11 @@
             }
 
 
+            .websuneed-card {
+                grid-column: auto;
+            }
+
+
             .about-grid {
                 grid-template-columns: 1fr;
 
@@ -779,7 +841,7 @@
 
 
         <!-- =========================
-             APPLICATIONS
+             PROJECTS
         ========================== -->
 
         <section id="work">
@@ -795,13 +857,13 @@
 
 
                     <h2>
-                        Applications I've built
+                        Things I've built
                     </h2>
 
 
                     <p>
-                        A selection of Android applications focused on
-                        solving practical problems.
+                        A selection of applications and web projects
+                        focused on solving practical problems.
                     </p>
 
                 </div>
@@ -816,7 +878,8 @@
                     <article class="app-card">
 
                         <div class="app-icon">
-                            ⏰
+                            <img src="/anyalarm.png"
+                                 alt="Any Alarm logo">
                         </div>
 
 
@@ -872,7 +935,8 @@
                     <article class="app-card">
 
                         <div class="app-icon">
-                            ₹
+                            <img src="/net.png"
+                                 alt="NET Expense logo">
                         </div>
 
 
@@ -927,7 +991,8 @@
                     <article class="app-card">
 
                         <div class="app-icon">
-                            ◆
+                            <img src="/minesaves.png"
+                                 alt="MineSaves logo">
                         </div>
 
 
@@ -971,6 +1036,64 @@
                            rel="noopener">
 
                             View on Google Play →
+
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- WEBSUNeed -->
+
+                    <article class="app-card websuneed-card">
+
+                        <div class="websuneed-logo">
+                            <span class="white">Webs</span><span class="blue">UN</span><span class="white">eed</span>
+                        </div>
+
+
+                        <h3>
+                            WebsUNeed
+                        </h3>
+
+
+                        <p>
+                            A web development agency focused on creating
+                            modern, high-performance websites and digital
+                            experiences for brands and businesses.
+                            The goal is to build websites that look
+                            professional, work smoothly and help businesses
+                            establish a stronger presence online.
+                        </p>
+
+
+                        <div class="tags">
+
+                            <span class="tag">
+                                Web Development
+                            </span>
+
+                            <span class="tag">
+                                UI/UX
+                            </span>
+
+                            <span class="tag">
+                                Websites
+                            </span>
+
+                            <span class="tag">
+                                Performance
+                            </span>
+
+                        </div>
+
+
+                        <a class="app-link"
+                           href="https://websuneed.netlify.app/"
+                           target="_blank"
+                           rel="noopener">
+
+                            Visit WebsUNeed →
 
                         </a>
 
@@ -1033,6 +1156,13 @@
                             applications simply for the sake of adding
                             another app to the world, I prefer creating
                             tools that have a clear purpose.
+                        </p>
+
+
+                        <p>
+                            Alongside software and mobile applications,
+                            I also work on modern websites and web
+                            experiences through WebsUNeed.
                         </p>
 
 
@@ -1152,6 +1282,10 @@
                     </span>
 
                     <span class="skill">
+                        Web Development
+                    </span>
+
+                    <span class="skill">
                         Automation
                     </span>
 
@@ -1207,8 +1341,9 @@
 
 
                     <p>
-                        Explore my projects, applications and development
-                        work through GitHub and Google Play.
+                        Explore my projects, applications and web
+                        development work through GitHub, Google Play
+                        and WebsUNeed.
                     </p>
 
 
@@ -1231,6 +1366,16 @@
                            class="button secondary">
 
                             Google Play ↗
+
+                        </a>
+
+
+                        <a href="https://websuneed.netlify.app/"
+                           target="_blank"
+                           rel="noopener"
+                           class="button secondary">
+
+                            WebsUNeed ↗
 
                         </a>
 
@@ -1288,3 +1433,4 @@
 
 </body>
 </html>
+```
