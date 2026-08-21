@@ -1,6 +1,6 @@
 # Muhammad Azaan M R
 
-I am **Muhammad Azaan M R**, an independent mobile app developer and creator from **Kerala, India**. I develop Android applications under my developer brand **AZN Labs**, which is also associated with **AZN Enterprises**.
+I am **Muhammad Azaan M R**, an independent mobile app and web developer and creator from **Kerala, India**. I develop Android applications under my developer brand **AZN Labs**, which is also associated with **AZN Enterprises**.
 
 My main focus is building practical software utilities that solve everyday problems, with an emphasis on **privacy, offline functionality, user control, and useful features**.
 
