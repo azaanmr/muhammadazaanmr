@@ -55,8 +55,3 @@ My interests and development work include:
 
 My goal is to continue learning, building useful software, and turning practical ideas into applications that people can actually use.
 
-## Developer Identity
-
-I use **Muhammad Azaan M R** as my personal identity and **AZN Labs** as my developer brand, with **AZN Enterprises** also associated with my published applications.
-
-My applications and projects are part of the same independent software-development work.
