@@ -4,465 +4,746 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Muhammad Azaan M R | Developer</title>
-    <meta name="description" content="Muhammad Azaan M R — Android and software developer from Kerala, India. Creator of practical, privacy-focused utility applications.">
+    <title>Muhammad Azaan M R — Android & Software Developer</title>
+
+    <meta name="description"
+          content="Muhammad Azaan M R — Android and software developer building practical, privacy-focused utility applications.">
+
+    <meta name="author" content="Muhammad Azaan M R">
+    <meta name="theme-color" content="#0b0d10">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="Muhammad Azaan M R — Android & Software Developer">
+
+    <meta property="og:description"
+          content="Android and software developer building practical, privacy-focused utility applications.">
+
+    <meta property="og:url"
+          content="https://azaanmr.github.io/">
+
+    <meta property="og:type" content="website">
+
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Muhammad Azaan M R",
+            "alternateName": "azaanmr",
+            "url": "https://azaanmr.github.io/",
+            "sameAs": [
+                "https://github.com/azaanmr"
+            ]
+        }
+    }
+    </script>
+
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
+
         :root {
             --bg: #0b0d10;
             --bg-secondary: #11151a;
             --card: #151a20;
             --border: #252c34;
+
             --text: #f3f5f7;
             --muted: #9ca6b2;
+
             --accent: #7c9cff;
             --accent-hover: #9bb3ff;
+
             --max-width: 1100px;
         }
+
 
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Roboto, Helvetica, Arial, sans-serif;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
             background: var(--bg);
             color: var(--text);
+
             line-height: 1.6;
         }
+
 
         a {
             color: inherit;
             text-decoration: none;
         }
 
+
         .container {
             width: min(100% - 40px, var(--max-width));
             margin: auto;
         }
 
-        /* Navigation */
+
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav {
             position: sticky;
             top: 0;
             z-index: 100;
+
             background: rgba(11, 13, 16, 0.82);
             backdrop-filter: blur(14px);
-            border-bottom: 1px solid rgba(255,255,255,0.06);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
+
 
         .nav-inner {
             height: 70px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
+
         .logo {
             font-size: 20px;
             font-weight: 700;
+
             letter-spacing: -0.5px;
         }
+
 
         .logo span {
             color: var(--accent);
         }
 
+
         .nav-links {
             display: flex;
             gap: 28px;
+
             list-style: none;
+
             color: var(--muted);
             font-size: 14px;
         }
+
 
         .nav-links a {
             transition: color 0.2s ease;
         }
 
+
         .nav-links a:hover {
             color: var(--text);
         }
 
-        /* Hero */
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             min-height: calc(100vh - 70px);
+
             display: flex;
             align-items: center;
+
             padding: 90px 0;
         }
+
 
         .hero-content {
             max-width: 800px;
         }
 
+
         .eyebrow {
             color: var(--accent);
+
             font-size: 14px;
             font-weight: 600;
+
             margin-bottom: 20px;
+
             letter-spacing: 0.5px;
         }
 
+
         .hero h1 {
             font-size: clamp(46px, 8vw, 86px);
+
             line-height: 1.02;
+
             letter-spacing: -4px;
+
             margin-bottom: 28px;
         }
+
 
         .hero h1 span {
             color: var(--muted);
         }
 
+
         .hero-description {
             color: var(--muted);
+
             font-size: 19px;
+
             max-width: 680px;
+
             line-height: 1.7;
+
             margin-bottom: 35px;
         }
 
+
         .buttons {
             display: flex;
+
             gap: 14px;
+
             flex-wrap: wrap;
         }
 
+
         .button {
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
+
             padding: 12px 20px;
+
             border-radius: 9px;
+
             border: 1px solid var(--border);
+
             font-size: 14px;
             font-weight: 600;
+
             transition: 0.2s ease;
         }
 
+
         .button.primary {
             background: var(--text);
+
             color: var(--bg);
+
             border-color: var(--text);
         }
 
+
         .button.primary:hover {
             opacity: 0.85;
+
             transform: translateY(-2px);
         }
+
 
         .button.secondary {
             color: var(--text);
         }
 
+
         .button.secondary:hover {
             background: var(--card);
+
             transform: translateY(-2px);
         }
 
-        /* Sections */
+
+        /* =========================
+           SECTIONS
+        ========================= */
 
         section {
             padding: 100px 0;
         }
 
+
         .section-header {
             margin-bottom: 45px;
         }
 
+
         .section-label {
             color: var(--accent);
+
             font-size: 13px;
             font-weight: 700;
+
             text-transform: uppercase;
+
             letter-spacing: 1.5px;
+
             margin-bottom: 10px;
         }
 
+
         .section-header h2 {
             font-size: 38px;
+
             letter-spacing: -1.5px;
         }
 
+
         .section-header p {
             color: var(--muted);
+
             max-width: 650px;
+
             margin-top: 12px;
         }
 
-        /* Applications */
+
+        /* =========================
+           APPLICATIONS
+        ========================= */
 
         .apps {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 18px;
         }
 
+
         .app-card {
             background: var(--card);
+
             border: 1px solid var(--border);
+
             border-radius: 16px;
+
             padding: 28px;
+
             display: flex;
             flex-direction: column;
+
             min-height: 360px;
-            transition: transform 0.25s ease, border-color 0.25s ease;
+
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease;
         }
+
 
         .app-card:hover {
             transform: translateY(-6px);
+
             border-color: #3a4654;
         }
+
 
         .app-icon {
             width: 52px;
             height: 52px;
+
             border-radius: 13px;
+
             background: var(--bg-secondary);
+
             border: 1px solid var(--border);
+
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             font-size: 22px;
+
             margin-bottom: 25px;
         }
 
+
         .app-card h3 {
             font-size: 22px;
+
             margin-bottom: 12px;
         }
 
+
         .app-card p {
             color: var(--muted);
+
             font-size: 14px;
+
             line-height: 1.7;
         }
 
+
         .tags {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 7px;
+
             margin-top: 20px;
         }
 
+
         .tag {
             background: var(--bg-secondary);
+
             border: 1px solid var(--border);
+
             color: #b7c0ca;
+
             padding: 5px 9px;
+
             border-radius: 6px;
+
             font-size: 11px;
         }
 
+
         .app-link {
             margin-top: auto;
+
             padding-top: 25px;
+
             color: var(--accent);
+
             font-size: 14px;
+
             font-weight: 600;
         }
+
 
         .app-link:hover {
             color: var(--accent-hover);
         }
 
-        /* About */
+
+        /* =========================
+           ABOUT
+        ========================= */
 
         .about-grid {
             display: grid;
+
             grid-template-columns: 1.2fr 0.8fr;
+
             gap: 70px;
+
             align-items: start;
         }
 
+
         .about-text p {
             color: var(--muted);
+
             margin-bottom: 18px;
+
             font-size: 16px;
         }
 
+
         .values {
             display: grid;
+
             gap: 12px;
         }
 
+
         .value {
             padding: 18px;
+
             background: var(--card);
+
             border: 1px solid var(--border);
+
             border-radius: 11px;
         }
 
+
         .value strong {
             display: block;
+
             margin-bottom: 4px;
         }
 
+
         .value span {
             color: var(--muted);
+
             font-size: 13px;
         }
 
-        /* Skills */
+
+        /* =========================
+           SKILLS
+        ========================= */
 
         .skills {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 10px;
         }
 
+
         .skill {
             padding: 11px 16px;
+
             background: var(--card);
+
             border: 1px solid var(--border);
+
             border-radius: 8px;
+
             color: #c8ced6;
+
             font-size: 14px;
         }
 
-        /* Contact */
+
+        /* =========================
+           CONTACT
+        ========================= */
 
         .contact {
             background: var(--bg-secondary);
+
             border-top: 1px solid var(--border);
+
             border-bottom: 1px solid var(--border);
         }
+
 
         .contact-box {
             max-width: 700px;
         }
 
+
         .contact-box h2 {
             font-size: 42px;
+
             letter-spacing: -1.5px;
+
             margin-bottom: 15px;
         }
 
+
         .contact-box p {
             color: var(--muted);
+
             margin-bottom: 28px;
         }
 
-        /* Footer */
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             padding: 30px 0;
+
             color: #68727d;
+
             font-size: 13px;
         }
 
+
         .footer-inner {
             display: flex;
+
             justify-content: space-between;
+
             gap: 20px;
         }
 
-        /* Animation */
+
+        /* =========================
+           ANIMATION
+        ========================= */
 
         .fade {
             opacity: 0;
+
             transform: translateY(20px);
-            animation: fadeUp 0.7s ease forwards;
+
+            animation:
+                fadeUp 0.7s ease forwards;
         }
+
 
         @keyframes fadeUp {
+
             to {
                 opacity: 1;
+
                 transform: translateY(0);
             }
+
         }
 
-        /* Mobile */
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 800px) {
+
             .nav-links {
                 display: none;
             }
 
+
             .hero {
                 min-height: auto;
+
                 padding: 90px 0 100px;
             }
 
+
             .hero h1 {
                 font-size: 52px;
+
                 letter-spacing: -2.5px;
             }
+
 
             .hero-description {
                 font-size: 17px;
             }
 
+
             section {
                 padding: 75px 0;
             }
+
 
             .apps {
                 grid-template-columns: 1fr;
             }
 
+
             .about-grid {
                 grid-template-columns: 1fr;
+
                 gap: 40px;
             }
+
 
             .section-header h2 {
                 font-size: 32px;
             }
 
+
             .contact-box h2 {
                 font-size: 34px;
             }
 
+
             .footer-inner {
                 flex-direction: column;
             }
+
         }
+
     </style>
 </head>
 
+
 <body>
 
-    <!-- Navigation -->
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <nav>
+
         <div class="container nav-inner">
-            <a href="#" class="logo">Azaan<span>.</span></a>
+
+            <a href="#" class="logo">
+                Azaan<span>.</span>
+            </a>
+
 
             <ul class="nav-links">
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
             </ul>
+
         </div>
+
     </nav>
 
 
-    <!-- Hero -->
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
     <main>
 
+
+        <!-- HERO -->
+
         <section class="hero">
+
             <div class="container">
+
                 <div class="hero-content fade">
 
                     <div class="eyebrow">
                         ANDROID & SOFTWARE DEVELOPER
                     </div>
 
+
                     <h1>
                         Muhammad<br>
                         Azaan M R<span>.</span>
                     </h1>
+
 
                     <p class="hero-description">
                         I build practical software and mobile applications
@@ -471,10 +752,14 @@
                         and giving users control over their data.
                     </p>
 
+
                     <div class="buttons">
-                        <a href="#work" class="button primary">
+
+                        <a href="#work"
+                           class="button primary">
                             Explore my work
                         </a>
+
 
                         <a href="https://github.com/azaanmr"
                            target="_blank"
@@ -482,34 +767,63 @@
                            class="button secondary">
                             GitHub ↗
                         </a>
+
                     </div>
 
                 </div>
+
             </div>
+
         </section>
 
 
-        <!-- Applications -->
+
+        <!-- =========================
+             APPLICATIONS
+        ========================== -->
+
         <section id="work">
+
             <div class="container">
 
+
                 <div class="section-header">
-                    <div class="section-label">Featured work</div>
-                    <h2>Applications I've built</h2>
+
+                    <div class="section-label">
+                        Featured work
+                    </div>
+
+
+                    <h2>
+                        Applications I've built
+                    </h2>
+
+
                     <p>
                         A selection of Android applications focused on
                         solving practical problems.
                     </p>
+
                 </div>
+
+
 
                 <div class="apps">
 
-                    <!-- Any Alarm -->
+
+                    <!-- ANY ALARM -->
+
                     <article class="app-card">
 
-                        <div class="app-icon">⏰</div>
+                        <div class="app-icon">
+                            ⏰
+                        </div>
 
-                        <h3>Any Alarm</h3>
+
+                        <h3>
+                            Any Alarm
+                        </h3>
+
 
                         <p>
                             An advanced alarm application that uses
@@ -518,29 +832,54 @@
                             barcodes to make waking up harder to ignore.
                         </p>
 
+
                         <div class="tags">
-                            <span class="tag">Android</span>
-                            <span class="tag">GPS</span>
-                            <span class="tag">QR</span>
-                            <span class="tag">Math</span>
+
+                            <span class="tag">
+                                Android
+                            </span>
+
+                            <span class="tag">
+                                GPS
+                            </span>
+
+                            <span class="tag">
+                                QR
+                            </span>
+
+                            <span class="tag">
+                                Math
+                            </span>
+
                         </div>
+
 
                         <a class="app-link"
                            href="https://play.google.com/store/apps/details?id=com.aznenterprises.anyalarm"
                            target="_blank"
                            rel="noopener">
+
                             View on Google Play →
+
                         </a>
 
                     </article>
 
 
-                    <!-- NET Expense -->
+
+                    <!-- NET EXPENSE -->
+
                     <article class="app-card">
 
-                        <div class="app-icon">₹</div>
+                        <div class="app-icon">
+                            ₹
+                        </div>
 
-                        <h3>NET Expense</h3>
+
+                        <h3>
+                            NET Expense
+                        </h3>
+
 
                         <p>
                             An offline-capable expense and budget manager
@@ -548,29 +887,54 @@
                             viewing analytics and keeping track of meals.
                         </p>
 
+
                         <div class="tags">
-                            <span class="tag">Android</span>
-                            <span class="tag">Offline</span>
-                            <span class="tag">Finance</span>
-                            <span class="tag">Analytics</span>
+
+                            <span class="tag">
+                                Android
+                            </span>
+
+                            <span class="tag">
+                                Offline
+                            </span>
+
+                            <span class="tag">
+                                Finance
+                            </span>
+
+                            <span class="tag">
+                                Analytics
+                            </span>
+
                         </div>
+
 
                         <a class="app-link"
                            href="https://play.google.com/store/apps/details?id=com.aznenterprises.tracksmith"
                            target="_blank"
                            rel="noopener">
+
                             View on Google Play →
+
                         </a>
 
                     </article>
 
 
-                    <!-- MineSaves -->
+
+                    <!-- MINESAVES -->
+
                     <article class="app-card">
 
-                        <div class="app-icon">◆</div>
+                        <div class="app-icon">
+                            ◆
+                        </div>
 
-                        <h3>MineSaves</h3>
+
+                        <h3>
+                            MineSaves
+                        </h3>
+
 
                         <p>
                             A local file utility for Minecraft Bedrock
@@ -579,37 +943,74 @@
                             thumbnails.
                         </p>
 
+
                         <div class="tags">
-                            <span class="tag">Android</span>
-                            <span class="tag">MCPE</span>
-                            <span class="tag">Backups</span>
-                            <span class="tag">Files</span>
+
+                            <span class="tag">
+                                Android
+                            </span>
+
+                            <span class="tag">
+                                MCPE
+                            </span>
+
+                            <span class="tag">
+                                Backups
+                            </span>
+
+                            <span class="tag">
+                                Files
+                            </span>
+
                         </div>
+
 
                         <a class="app-link"
                            href="https://play.google.com/store/apps/details?id=com.aznenterprises.mcpebackup"
                            target="_blank"
                            rel="noopener">
+
                             View on Google Play →
+
                         </a>
 
                     </article>
 
+
                 </div>
+
             </div>
+
         </section>
 
 
-        <!-- About -->
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
         <section id="about">
+
             <div class="container">
 
+
                 <div class="section-header">
-                    <div class="section-label">About me</div>
-                    <h2>Building things that are useful.</h2>
+
+                    <div class="section-label">
+                        About me
+                    </div>
+
+
+                    <h2>
+                        Building things that are useful.
+                    </h2>
+
                 </div>
 
+
+
                 <div class="about-grid">
+
 
                     <div class="about-text">
 
@@ -618,11 +1019,13 @@
                             app and software developer from Kerala, India.
                         </p>
 
+
                         <p>
                             I develop Android applications under my
                             developer brand <strong>AZN Labs</strong>,
                             associated with <strong>AZN Enterprises</strong>.
                         </p>
+
 
                         <p>
                             I enjoy turning everyday problems into
@@ -631,6 +1034,7 @@
                             another app to the world, I prefer creating
                             tools that have a clear purpose.
                         </p>
+
 
                         <p>
                             I'm continuously learning new technologies,
@@ -641,135 +1045,246 @@
                     </div>
 
 
+
                     <div class="values">
 
+
                         <div class="value">
-                            <strong>Privacy</strong>
+
+                            <strong>
+                                Privacy
+                            </strong>
+
                             <span>
                                 Minimize unnecessary data collection.
                             </span>
+
                         </div>
 
+
                         <div class="value">
-                            <strong>Offline-first</strong>
+
+                            <strong>
+                                Offline-first
+                            </strong>
+
                             <span>
                                 Keep applications useful without
                                 depending unnecessarily on the internet.
                             </span>
+
                         </div>
 
+
                         <div class="value">
-                            <strong>User control</strong>
+
+                            <strong>
+                                User control
+                            </strong>
+
                             <span>
                                 Give users control over their own data
                                 and how applications behave.
                             </span>
+
                         </div>
 
+
                         <div class="value">
-                            <strong>Practical software</strong>
+
+                            <strong>
+                                Practical software
+                            </strong>
+
                             <span>
                                 Build tools that solve actual problems.
                             </span>
+
                         </div>
+
 
                     </div>
 
                 </div>
+
             </div>
+
         </section>
 
 
-        <!-- Skills -->
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
         <section id="skills">
+
             <div class="container">
 
+
                 <div class="section-header">
-                    <div class="section-label">Interests</div>
-                    <h2>What I work with</h2>
+
+                    <div class="section-label">
+                        Interests
+                    </div>
+
+
+                    <h2>
+                        What I work with
+                    </h2>
+
                 </div>
+
+
 
                 <div class="skills">
 
-                    <span class="skill">Android Development</span>
-                    <span class="skill">Mobile Applications</span>
-                    <span class="skill">Software Engineering</span>
-                    <span class="skill">Automation</span>
-                    <span class="skill">Developer Tools</span>
-                    <span class="skill">Utility Applications</span>
-                    <span class="skill">Privacy-focused Software</span>
-                    <span class="skill">Offline-first Design</span>
-                    <span class="skill">AI-assisted Development</span>
+                    <span class="skill">
+                        Android Development
+                    </span>
+
+                    <span class="skill">
+                        Mobile Applications
+                    </span>
+
+                    <span class="skill">
+                        Software Engineering
+                    </span>
+
+                    <span class="skill">
+                        Automation
+                    </span>
+
+                    <span class="skill">
+                        Developer Tools
+                    </span>
+
+                    <span class="skill">
+                        Utility Applications
+                    </span>
+
+                    <span class="skill">
+                        Privacy-focused Software
+                    </span>
+
+                    <span class="skill">
+                        Offline-first Design
+                    </span>
+
+                    <span class="skill">
+                        AI-assisted Development
+                    </span>
 
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- Contact -->
-        <section id="contact" class="contact">
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact"
+                 class="contact">
+
             <div class="container">
 
+
                 <div class="contact-box">
+
 
                     <div class="section-label">
                         Find me online
                     </div>
 
-                    <h2>Let's build something useful.</h2>
+
+                    <h2>
+                        Let's build something useful.
+                    </h2>
+
 
                     <p>
                         Explore my projects, applications and development
                         work through GitHub and Google Play.
                     </p>
 
+
                     <div class="buttons">
+
 
                         <a href="https://github.com/azaanmr"
                            target="_blank"
                            rel="noopener"
                            class="button primary">
+
                             GitHub ↗
+
                         </a>
+
 
                         <a href="https://play.google.com/store/apps/dev?id=7607789726484682256"
                            target="_blank"
                            rel="noopener"
                            class="button secondary">
+
                             Google Play ↗
+
                         </a>
+
 
                     </div>
 
                 </div>
 
             </div>
+
         </section>
+
 
     </main>
 
 
-    <!-- Footer -->
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
+
         <div class="container footer-inner">
 
-            <span>
-                © <span id="year"></span> Muhammad Azaan M R
-            </span>
 
             <span>
-                Built with HTML & CSS
+                © <span id="year"></span>
+                Muhammad Azaan M R
             </span>
+
+
+            <span>
+                Built with HTML, CSS & JavaScript
+            </span>
+
 
         </div>
+
     </footer>
 
 
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script>
+
         document.getElementById("year").textContent =
             new Date().getFullYear();
+
     </script>
+
 
 </body>
 </html>
