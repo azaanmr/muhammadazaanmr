@@ -1,75 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Muhammad Azaan M R — Android & Software Developer</title>
+    <title>Muhammad Azaan M R | AZN Labs</title>
 
     <meta name="description"
-          content="Muhammad Azaan M R — Android and software developer building practical applications, useful software and modern websites.">
+        content="Muhammad Azaan M R is the developer behind AZN Labs, a premium Android app development brand creating polished and useful mobile applications.">
 
     <meta name="author" content="Muhammad Azaan M R">
-    <meta name="theme-color" content="#0b0d10">
 
-    <!-- Favicon -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta name="theme-color" content="#080a0d">
+
+    <link rel="canonical" href="https://azaanmr.github.io/">
+
     <link rel="icon" type="image/png" href="/favicon.png">
 
-    <!-- Open Graph -->
-    <meta property="og:title"
-          content="Muhammad Azaan M R — Android & Software Developer">
 
-    <meta property="og:description"
-          content="Android and software developer building practical applications, useful software and modern websites.">
+    <!-- =========================================================
+         OPEN GRAPH
+    ========================================================== -->
 
-    <meta property="og:url"
-          content="https://azaanmr.github.io/">
+    <meta property="og:title" content="Muhammad Azaan M R | AZN Labs">
+
+    <meta property="og:description" content="AZN Labs — premium Android applications by Muhammad Azaan M R.">
+
+    <meta property="og:url" content="https://azaanmr.github.io/">
 
     <meta property="og:type" content="website">
 
+    <meta property="og:site_name" content="AZN Labs">
 
-    <!-- Structured data -->
+    <meta property="og:image" content="https://azaanmr.github.io/favicon.png">
+
+    <meta property="og:image:alt" content="AZN Labs">
+
+
+    <!-- =========================================================
+         TWITTER / X
+    ========================================================== -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Muhammad Azaan M R | AZN Labs">
+
+    <meta name="twitter:description" content="AZN Labs — premium Android applications by Muhammad Azaan M R.">
+
+    <meta name="twitter:image" content="https://azaanmr.github.io/favicon.png">
+
+    <meta name="twitter:image:alt" content="AZN Labs">
+
+
+    <!-- =========================================================
+         STRUCTURED DATA: WEBSITE
+    ========================================================== -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "mainEntity": {
+        "@type": "WebSite",
+        "name": "AZN Labs",
+        "url": "https://azaanmr.github.io/",
+        "description": "Premium Android applications by Muhammad Azaan M R.",
+        "publisher": {
             "@type": "Person",
             "name": "Muhammad Azaan M R",
-            "alternateName": "azaanmr",
             "url": "https://azaanmr.github.io/",
             "sameAs": [
-                "https://github.com/azaanmr"
+                "https://github.com/azaanmr",
+                "https://www.linkedin.com/in/muhammad-azaan-mr/"
             ]
         }
     }
     </script>
 
 
-    <style>
+    <!-- =========================================================
+         STRUCTURED DATA: PERSON
+    ========================================================== -->
 
-        * {
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Azaan M R",
+        "alternateName": "azaanmr",
+        "url": "https://azaanmr.github.io/",
+        "jobTitle": "Android App Developer",
+        "sameAs": [
+            "https://github.com/azaanmr",
+            "https://www.linkedin.com/in/muhammad-azaan-mr/"
+        ],
+        "knowsAbout": [
+            "Android Development",
+            "Mobile Application Development",
+            "Software Development",
+            "Web Development",
+            "Automation"
+        ]
+    }
+    </script>
+
+
+    <style>
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
 
+        /* =========================================================
+           VARIABLES
+        ========================================================= */
+
         :root {
-            --bg: #0b0d10;
-            --bg-secondary: #11151a;
-            --card: #151a20;
-            --border: #252c34;
+            --bg: #080a0d;
+            --bg-soft: #0d1014;
 
-            --text: #f3f5f7;
-            --muted: #9ca6b2;
+            --card: #11151a;
+            --card-hover: #151a20;
 
-            --accent: #7c9cff;
-            --accent-hover: #9bb3ff;
+            --border: rgba(255, 255, 255, 0.075);
+            --border-strong: rgba(255, 255, 255, 0.12);
 
-            --max-width: 1100px;
+            --text: #f4f6f8;
+            --muted: #929ca9;
+            --muted-light: #b5bec9;
+
+            --accent: #8aa6ff;
+            --accent-light: #a7bcff;
+
+            --shadow:
+                0 18px 50px rgba(0, 0, 0, 0.28);
+
+            --max-width: 1120px;
         }
 
+
+        /* =========================================================
+           BASE
+        ========================================================= */
 
         html {
             scroll-behavior: smooth;
@@ -77,6 +159,17 @@
 
 
         body {
+            min-height: 100vh;
+            overflow-x: hidden;
+
+            background:
+                radial-gradient(circle at 78% 8%,
+                    rgba(91, 124, 255, 0.09),
+                    transparent 28%),
+                var(--bg);
+
+            color: var(--text);
+
             font-family:
                 -apple-system,
                 BlinkMacSystemFont,
@@ -86,10 +179,25 @@
                 Arial,
                 sans-serif;
 
-            background: var(--bg);
-            color: var(--text);
-
             line-height: 1.6;
+
+            -webkit-font-smoothing: antialiased;
+
+            text-rendering: optimizeLegibility;
+        }
+
+
+        ::selection {
+            background:
+                rgba(125, 156, 255, 0.28);
+
+            color: white;
+        }
+
+
+        img {
+            display: block;
+            max-width: 100%;
         }
 
 
@@ -99,63 +207,100 @@
         }
 
 
-        .container {
-            width: min(100% - 40px, var(--max-width));
-            margin: auto;
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
         }
 
 
-        /* =========================
+        p,
+        h1,
+        h2,
+        h3 {
+            overflow-wrap: break-word;
+        }
+
+
+        .container {
+            width:
+                min(calc(100% - 48px),
+                    var(--max-width));
+
+            margin-inline: auto;
+        }
+
+
+        /* =========================================================
            NAVIGATION
-        ========================= */
+        ========================================================= */
 
         nav {
             position: sticky;
             top: 0;
+
             z-index: 100;
 
-            background: rgba(11, 13, 16, 0.82);
-            backdrop-filter: blur(14px);
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.055);
 
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            background:
+                rgba(8, 10, 13, 0.78);
+
+            backdrop-filter:
+                blur(18px);
+
+            -webkit-backdrop-filter:
+                blur(18px);
         }
 
 
         .nav-inner {
-            height: 70px;
+            min-height: 72px;
 
             display: flex;
+
             align-items: center;
             justify-content: space-between;
         }
 
 
-        .logo {
-            font-size: 20px;
-            font-weight: 700;
+        .brand {
+            display: inline-flex;
 
-            letter-spacing: -0.5px;
+            align-items: center;
+
+            font-size: 19px;
+            font-weight: 800;
+
+            letter-spacing: -0.7px;
         }
 
 
-        .logo span {
+        .brand span {
             color: var(--accent);
         }
 
 
         .nav-links {
             display: flex;
-            gap: 28px;
+
+            align-items: center;
+
+            gap: 30px;
 
             list-style: none;
 
             color: var(--muted);
-            font-size: 14px;
+
+            font-size: 13px;
+            font-weight: 600;
         }
 
 
         .nav-links a {
-            transition: color 0.2s ease;
+            transition:
+                color 0.2s ease,
+                opacity 0.2s ease;
         }
 
 
@@ -164,70 +309,194 @@
         }
 
 
-        /* =========================
+        /* =========================================================
            HERO
-        ========================= */
+        ========================================================= */
 
         .hero {
-            min-height: calc(100vh - 70px);
+            position: relative;
+
+            min-height:
+                calc(100vh - 72px);
 
             display: flex;
+
             align-items: center;
 
-            padding: 90px 0;
+            padding:
+                clamp(88px, 10vw, 105px) 0 clamp(92px, 11vw, 140px);
+
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 520px;
+            height: 520px;
+
+            right: -180px;
+            top: -100px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(circle,
+                    rgba(125, 156, 255, 0.13),
+                    rgba(125, 156, 255, 0) 68%);
+
+            pointer-events: none;
+        }
+
+
+        .hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 420px;
+            height: 420px;
+
+            left: -230px;
+            bottom: -220px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(circle,
+                    rgba(63, 93, 180, 0.08),
+                    rgba(63, 93, 180, 0) 68%);
+
+            pointer-events: none;
         }
 
 
         .hero-content {
-            max-width: 800px;
+            position: relative;
+
+            z-index: 1;
+
+            width: 100%;
+            max-width: 960px;
+            min-width: 0;
         }
 
 
-        .eyebrow {
+        .hero-name {
+            margin-bottom: 27px;
+
             color: var(--accent);
 
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 800;
 
-            margin-bottom: 20px;
+            letter-spacing: 2px;
 
-            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
+
+        /*
+           Single real H1.
+
+           Important:
+           The fallback color is kept as a normal visible color.
+           Browsers that support background clipping get the gradient;
+           browsers that do not still display the title normally.
+        */
 
         .hero h1 {
-            font-size: clamp(46px, 8vw, 86px);
+            display: block;
 
-            line-height: 1.02;
+            margin:
+                0 0 35px;
 
-            letter-spacing: -4px;
+            padding:
+                0.04em 0 0.12em;
 
-            margin-bottom: 28px;
+            font-size:
+                clamp(60px,
+                    9.2vw,
+                    122px);
+
+            font-weight: 800;
+
+            line-height: 1.12;
+
+            letter-spacing:
+                clamp(-6px,
+                    -0.5vw,
+                    -3px);
+
+            white-space: nowrap;
+
+            overflow: visible;
+
+            color: #f4f6f8;
+
+            background:
+                linear-gradient(110deg,
+                    #f7f8fa 0%,
+                    #dce3ee 42%,
+                    #9eb5ff 100%);
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            -webkit-text-fill-color: transparent;
         }
 
 
-        .hero h1 span {
-            color: var(--muted);
+        .hero-subtitle {
+            max-width: 850px;
+
+            margin-bottom: 23px;
+
+            font-size:
+                clamp(27px,
+                    4vw,
+                    44px);
+
+            font-weight: 680;
+
+            line-height: 1.08;
+
+            letter-spacing: -2px;
         }
 
 
         .hero-description {
-            color: var(--muted);
+            max-width: 720px;
 
-            font-size: 19px;
+            margin-bottom: 36px;
 
-            max-width: 680px;
+            color: var(--muted-light);
 
-            line-height: 1.7;
+            font-size: 18px;
 
-            margin-bottom: 35px;
+            line-height: 1.75;
         }
 
+
+        .hero-description strong {
+            color: var(--text);
+        }
+
+
+        /* =========================================================
+           BUTTONS
+        ========================================================= */
 
         .buttons {
             display: flex;
 
-            gap: 14px;
+            align-items: center;
+
+            gap: 12px;
 
             flex-wrap: wrap;
         }
@@ -239,166 +508,328 @@
             align-items: center;
             justify-content: center;
 
-            padding: 12px 20px;
+            min-height: 48px;
 
-            border-radius: 9px;
+            padding:
+                0 19px;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border-strong);
+
+            border-radius: 10px;
 
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 700;
 
-            transition: 0.2s ease;
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease,
+                border-color 0.2s ease,
+                opacity 0.2s ease;
         }
 
 
         .button.primary {
             background: var(--text);
 
-            color: var(--bg);
+            color: #0b0d10;
 
-            border-color: var(--text);
+            border-color:
+                var(--text);
         }
 
 
         .button.primary:hover {
-            opacity: 0.85;
-
             transform: translateY(-2px);
+
+            opacity: 0.96;
+
+            box-shadow:
+                0 10px 28px rgba(0, 0, 0, 0.24);
         }
 
 
         .button.secondary {
+            background:
+                rgba(255, 255, 255, 0.015);
+
             color: var(--text);
         }
 
 
         .button.secondary:hover {
-            background: var(--card);
-
             transform: translateY(-2px);
+
+            background:
+                rgba(255, 255, 255, 0.055);
+
+            border-color:
+                rgba(255, 255, 255, 0.18);
         }
 
 
-        /* =========================
-           SECTIONS
-        ========================= */
+        /* =========================================================
+           GENERAL SECTIONS
+        ========================================================= */
 
         section {
-            padding: 100px 0;
-        }
-
-
-        .section-header {
-            margin-bottom: 45px;
+            padding:
+                clamp(78px, 9vw, 110px) 0;
         }
 
 
         .section-label {
+            margin-bottom: 12px;
+
             color: var(--accent);
 
-            font-size: 13px;
-            font-weight: 700;
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 1.8px;
 
             text-transform: uppercase;
-
-            letter-spacing: 1.5px;
-
-            margin-bottom: 10px;
         }
 
 
-        .section-header h2 {
-            font-size: 38px;
+        .section-heading {
+            max-width: 750px;
 
-            letter-spacing: -1.5px;
+            margin-bottom: 46px;
         }
 
 
-        .section-header p {
+        .section-heading h2 {
+            font-size:
+                clamp(34px,
+                    4vw,
+                    48px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+        }
+
+
+        .section-heading p {
+            max-width: 690px;
+
+            margin-top: 16px;
+
             color: var(--muted);
 
-            max-width: 650px;
+            font-size: 16px;
 
-            margin-top: 12px;
+            line-height: 1.75;
         }
 
 
-        /* =========================
-           PROJECT GRID
-        ========================= */
+        /* =========================================================
+           AZN LABS INTRO
+        ========================================================= */
 
-        .apps {
+        .intro-grid {
             display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns:
+                minmax(0, 1.15fr) minmax(0, 0.85fr);
+
+            gap: 18px;
+        }
+
+
+        .intro-card {
+            min-width: 0;
+            padding: 34px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(145deg,
+                    rgba(255, 255, 255, 0.025),
+                    rgba(255, 255, 255, 0.008)),
+                var(--card);
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .intro-card.large {
+            min-height: 260px;
+        }
+
+
+        .intro-card h3 {
+            margin-bottom: 13px;
+
+            font-size: 25px;
+
+            letter-spacing: -0.8px;
+        }
+
+
+        .intro-card p {
+            color: var(--muted);
+
+            font-size: 15px;
+
+            line-height: 1.8;
+        }
+
+
+        .labs-wordmark {
+            margin-bottom: 16px;
+
+            font-size: 36px;
+
+            font-weight: 850;
+
+            line-height: 1;
+
+            letter-spacing: -2px;
+        }
+
+
+        .labs-wordmark span {
+            color: var(--accent);
+        }
+
+
+        /* =========================================================
+           APP GRID
+        ========================================================= */
+
+        .app-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
 
             gap: 18px;
         }
 
 
         .app-card {
-            background: var(--card);
+            position: relative;
+            min-width: 0;
 
-            border: 1px solid var(--border);
+            display: flex;
 
-            border-radius: 16px;
+            flex-direction: column;
+
+            min-height: 390px;
 
             padding: 28px;
 
-            display: flex;
-            flex-direction: column;
+            overflow: hidden;
 
-            min-height: 370px;
+            border:
+                1px solid var(--border);
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(145deg,
+                    rgba(255, 255, 255, 0.022),
+                    rgba(255, 255, 255, 0)),
+                var(--card);
 
             transition:
                 transform 0.25s ease,
-                border-color 0.25s ease;
+                border-color 0.25s ease,
+                background 0.25s ease;
+        }
+
+
+        .app-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            top: -90px;
+            right: -80px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(circle,
+                    rgba(125, 156, 255, 0.075),
+                    transparent 70%);
+
+            pointer-events: none;
         }
 
 
         .app-card:hover {
-            transform: translateY(-6px);
+            transform:
+                translateY(-5px);
 
-            border-color: #3a4654;
+            box-shadow:
+                0 18px 44px rgba(0, 0, 0, 0.20);
+
+            border-color:
+                rgba(125, 156, 255, 0.22);
+
+            background:
+                linear-gradient(145deg,
+                    rgba(255, 255, 255, 0.035),
+                    rgba(255, 255, 255, 0)),
+                var(--card-hover);
         }
 
 
         .app-icon {
-            width: 72px;
-            height: 72px;
+            position: relative;
 
-            border-radius: 17px;
+            z-index: 1;
 
-            background: var(--bg-secondary);
+            width: 76px;
+            height: 76px;
 
-            border: 1px solid var(--border);
-
-            display: flex;
-
-            align-items: center;
-            justify-content: center;
-
-            margin-bottom: 25px;
+            margin-bottom: 24px;
 
             overflow: hidden;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(255,
+                    255,
+                    255,
+                    0.09);
+
+            background: #0d1014;
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.25);
         }
 
 
         .app-icon img {
+            display: block;
+
             width: 100%;
             height: 100%;
 
             object-fit: contain;
-
-            display: block;
         }
 
 
         .app-card h3 {
-            font-size: 22px;
+            margin-bottom: 11px;
 
-            margin-bottom: 12px;
+            font-size: 23px;
+
+            line-height: 1.1;
+
+            letter-spacing: -0.8px;
         }
 
 
@@ -407,7 +838,7 @@
 
             font-size: 14px;
 
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
 
@@ -423,21 +854,28 @@
 
 
         .tag {
-            background: var(--bg-secondary);
+            padding:
+                5px 9px;
 
-            border: 1px solid var(--border);
-
-            color: #b7c0ca;
-
-            padding: 5px 9px;
+            border:
+                1px solid var(--border);
 
             border-radius: 6px;
 
-            font-size: 11px;
+            background:
+                rgba(255, 255, 255, 0.018);
+
+            color: #aeb7c3;
+
+            font-size: 10px;
+
+            font-weight: 600;
         }
 
 
         .app-link {
+            display: inline-block;
+
             margin-top: auto;
 
             padding-top: 25px;
@@ -446,48 +884,50 @@
 
             font-size: 14px;
 
-            font-weight: 600;
+            font-weight: 700;
         }
 
 
         .app-link:hover {
-            color: var(--accent-hover);
+            color: var(--accent-light);
         }
 
 
-        /* =========================
+        /* =========================================================
            WEBSUNeed
-        ========================= */
+        ========================================================= */
 
         .websuneed-card {
-            grid-column: 1 / -1;
+            grid-column:
+                1 / -1;
 
-            min-height: 300px;
+            min-height: 310px;
 
             background:
-                radial-gradient(
-                    circle at 85% 20%,
-                    rgba(0, 190, 255, 0.08),
-                    transparent 35%
-                ),
+                radial-gradient(circle at 82% 15%,
+                    rgba(0,
+                        210,
+                        255,
+                        0.09),
+                    transparent 33%),
+                radial-gradient(circle at 15% 100%,
+                    rgba(69,
+                        75,
+                        255,
+                        0.06),
+                    transparent 32%),
                 var(--card);
         }
 
 
         .websuneed-logo {
-            width: fit-content;
+            margin-bottom: 21px;
 
-            font-size: 28px;
-            font-weight: 800;
+            font-size: 31px;
 
-            letter-spacing: -1.5px;
+            font-weight: 850;
 
-            margin-bottom: 24px;
-        }
-
-
-        .websuneed-logo .blue {
-            color: #16d9ee;
+            letter-spacing: -1.7px;
         }
 
 
@@ -496,19 +936,35 @@
         }
 
 
-        .websuneed-logo .accent {
-            color: #357dff;
+        .websuneed-logo .blue {
+            color: #17d9ef;
         }
 
 
-        /* =========================
-           ABOUT
-        ========================= */
+        .websuneed-kicker {
+            margin-bottom: 10px;
 
-        .about-grid {
+            color: #8da0b4;
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =========================================================
+           ABOUT
+        ========================================================= */
+
+        .about-layout {
             display: grid;
 
-            grid-template-columns: 1.2fr 0.8fr;
+            grid-template-columns:
+                1.1fr 0.9fr;
 
             gap: 70px;
 
@@ -516,52 +972,64 @@
         }
 
 
-        .about-text p {
+        .about-copy p {
+            margin-bottom: 20px;
+
             color: var(--muted);
 
-            margin-bottom: 18px;
-
             font-size: 16px;
+
+            line-height: 1.85;
         }
 
 
-        .values {
+        .about-copy strong {
+            color: var(--text);
+        }
+
+
+        .principles {
             display: grid;
 
             gap: 12px;
         }
 
 
-        .value {
-            padding: 18px;
+        .principle {
+            padding:
+                19px 20px;
 
-            background: var(--card);
+            border:
+                1px solid var(--border);
 
-            border: 1px solid var(--border);
+            border-radius: 12px;
 
-            border-radius: 11px;
+            background:
+                rgba(255, 255, 255, 0.018);
         }
 
 
-        .value strong {
+        .principle strong {
             display: block;
 
             margin-bottom: 4px;
+
+            font-size: 14px;
         }
 
 
-        .value span {
+        .principle span {
             color: var(--muted);
 
             font-size: 13px;
         }
 
 
-        /* =========================
-           SKILLS
-        ========================= */
+        /* =========================================================
+           DEVELOPMENT
+        ========================================================= */
 
-        .skills {
+        .skill-list {
             display: flex;
 
             flex-wrap: wrap;
@@ -571,69 +1039,91 @@
 
 
         .skill {
-            padding: 11px 16px;
+            padding:
+                10px 14px;
 
-            background: var(--card);
+            border:
+                1px solid var(--border);
 
-            border: 1px solid var(--border);
+            border-radius: 9px;
 
-            border-radius: 8px;
+            background:
+                rgba(255, 255, 255, 0.018);
 
-            color: #c8ced6;
+            color: var(--muted-light);
 
-            font-size: 14px;
+            font-size: 13px;
+
+            font-weight: 600;
         }
 
 
-        /* =========================
+        /* =========================================================
            CONTACT
-        ========================= */
+        ========================================================= */
 
-        .contact {
-            background: var(--bg-secondary);
+        .contact-section {
+            background:
+                linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.012),
+                    rgba(255, 255, 255, 0.025));
 
-            border-top: 1px solid var(--border);
+            border-top:
+                1px solid var(--border);
 
-            border-bottom: 1px solid var(--border);
+            border-bottom:
+                1px solid var(--border);
         }
 
 
         .contact-box {
-            max-width: 700px;
+            max-width: 820px;
         }
 
 
         .contact-box h2 {
-            font-size: 42px;
-
-            letter-spacing: -1.5px;
-
             margin-bottom: 15px;
+
+            font-size:
+                clamp(36px,
+                    5vw,
+                    52px);
+
+            line-height: 1;
+
+            letter-spacing: -2.2px;
         }
 
 
         .contact-box p {
+            max-width: 650px;
+
+            margin-bottom: 30px;
+
             color: var(--muted);
 
-            margin-bottom: 28px;
+            font-size: 16px;
         }
 
 
-        /* =========================
+        /* =========================================================
            FOOTER
-        ========================= */
+        ========================================================= */
 
         footer {
-            padding: 30px 0;
+            padding:
+                32px 0;
 
-            color: #68727d;
+            color: #69737f;
 
-            font-size: 13px;
+            font-size: 12px;
         }
 
 
         .footer-inner {
             display: flex;
+
+            align-items: center;
 
             justify-content: space-between;
 
@@ -641,36 +1131,105 @@
         }
 
 
-        /* =========================
+        /* =========================================================
            ANIMATION
-        ========================= */
+        ========================================================= */
 
-        .fade {
+        .fade-in {
             opacity: 0;
 
-            transform: translateY(20px);
+            transform:
+                translateY(18px);
 
             animation:
-                fadeUp 0.7s ease forwards;
+                fadeInUp 0.7s cubic-bezier(0.22,
+                    1,
+                    0.36,
+                    1) forwards;
         }
 
 
-        @keyframes fadeUp {
+        @keyframes fadeInUp {
 
             to {
                 opacity: 1;
 
-                transform: translateY(0);
+                transform:
+                    translateY(0);
             }
 
         }
 
 
-        /* =========================
-           MOBILE
-        ========================= */
+        /* =========================================================
+           ACCESSIBILITY
+        ========================================================= */
 
-        @media (max-width: 800px) {
+        :focus-visible {
+            outline:
+                2px solid var(--accent);
+
+            outline-offset:
+                3px;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 960px) {
+
+            .container {
+                width:
+                    min(calc(100% - 40px),
+                        var(--max-width));
+            }
+
+
+            .app-grid {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+
+            .about-layout {
+                grid-template-columns: 1fr;
+
+                gap: 42px;
+            }
+
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .intro-card.large {
+                min-height: auto;
+            }
+
+
+            .hero-content {
+                max-width: 900px;
+            }
+
+        }
+
+
+        @media (max-width: 760px) {
+
+            .container {
+                width:
+                    min(calc(100% - 32px),
+                        var(--max-width));
+            }
+
+
+            .nav-inner {
+                min-height: 64px;
+            }
+
 
             .nav-links {
                 display: none;
@@ -680,29 +1239,132 @@
             .hero {
                 min-height: auto;
 
-                padding: 90px 0 100px;
+                padding:
+                    78px 0 92px;
+            }
+
+
+            .hero-name {
+                margin-bottom: 18px;
+
+                font-size: 12px;
+
+                letter-spacing: 1.6px;
             }
 
 
             .hero h1 {
-                font-size: 52px;
+                max-width: 100%;
 
-                letter-spacing: -2.5px;
+                margin-bottom: 27px;
+
+                font-size:
+                    clamp(52px,
+                        16vw,
+                        82px);
+
+                line-height: 1.08;
+
+                letter-spacing:
+                    clamp(-3.5px,
+                        -0.6vw,
+                        -2px);
+
+                white-space: normal;
+            }
+
+
+            .hero-subtitle {
+                max-width: 100%;
+
+                margin-bottom: 18px;
+
+                font-size:
+                    clamp(25px,
+                        7vw,
+                        34px);
+
+                line-height: 1.1;
+
+                letter-spacing: -1.2px;
             }
 
 
             .hero-description {
-                font-size: 17px;
+                max-width: 100%;
+
+                margin-bottom: 28px;
+
+                font-size: 16px;
+
+                line-height: 1.7;
+            }
+
+
+            .buttons {
+                width: 100%;
+
+                gap: 10px;
+            }
+
+
+            .button {
+                flex: 1 1 160px;
+
+                min-height: 50px;
             }
 
 
             section {
-                padding: 75px 0;
+                padding:
+                    72px 0;
             }
 
 
-            .apps {
+            .section-heading {
+                margin-bottom: 30px;
+            }
+
+
+            .section-heading h2 {
+                font-size:
+                    clamp(31px,
+                        8vw,
+                        38px);
+
+                letter-spacing: -1.4px;
+            }
+
+
+            .section-heading p {
+                font-size: 15px;
+
+                line-height: 1.7;
+            }
+
+
+            .intro-card,
+            .app-card {
+                padding: 24px;
+
+                border-radius: 16px;
+            }
+
+
+            .labs-wordmark {
+                font-size: 32px;
+            }
+
+
+            .app-grid {
                 grid-template-columns: 1fr;
+
+                gap: 14px;
+            }
+
+
+            .app-card {
+                min-height: 0;
             }
 
 
@@ -711,29 +1373,113 @@
             }
 
 
-            .about-grid {
-                grid-template-columns: 1fr;
-
-                gap: 40px;
+            .about-layout {
+                gap: 34px;
             }
 
 
-            .section-header h2 {
-                font-size: 32px;
+            .about-copy p {
+                font-size: 15px;
+
+                line-height: 1.75;
             }
 
 
             .contact-box h2 {
-                font-size: 34px;
+                font-size:
+                    clamp(34px,
+                        9vw,
+                        46px);
             }
 
 
             .footer-inner {
+                align-items: flex-start;
+
                 flex-direction: column;
+
+                gap: 9px;
             }
 
         }
 
+
+        @media (max-width: 420px) {
+
+            .container {
+                width:
+                    calc(100% - 28px);
+            }
+
+
+            .hero {
+                padding:
+                    68px 0 82px;
+            }
+
+
+            .hero h1 {
+                font-size:
+                    clamp(48px,
+                        15.5vw,
+                        64px);
+
+                letter-spacing: -2.5px;
+            }
+
+
+            .hero-subtitle {
+                font-size: 27px;
+            }
+
+
+            .buttons {
+                flex-direction: column;
+            }
+
+
+            .button {
+                width: 100%;
+                flex: none;
+            }
+
+
+            .app-icon {
+                width: 68px;
+                height: 68px;
+
+                border-radius: 16px;
+            }
+
+
+            .app-card h3 {
+                font-size: 21px;
+            }
+
+        }
+
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+
+            *,
+            *::before,
+            *::after {
+                animation-duration:
+                    0.01ms !important;
+
+                animation-iteration-count:
+                    1 !important;
+
+                transition-duration:
+                    0.01ms !important;
+            }
+
+        }
     </style>
 </head>
 
@@ -741,35 +1487,43 @@
 <body>
 
 
-    <!-- =========================
+    <!-- =========================================================
          NAVIGATION
-    ========================== -->
+    ========================================================== -->
 
-    <nav>
+    <nav aria-label="Main navigation">
 
         <div class="container nav-inner">
 
-            <a href="#" class="logo">
-                Azaan<span>.</span>
+            <a href="/" class="brand" aria-label="AZN Labs home">
+                AZN <span>Labs.</span>
             </a>
 
 
             <ul class="nav-links">
 
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#about">
+                        About
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#apps">
+                        Apps
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#websuneed">
+                        WebsUNeed
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">
+                        Contact
+                    </a>
                 </li>
 
             </ul>
@@ -780,56 +1534,131 @@
 
 
 
-    <!-- =========================
-         MAIN
-    ========================== -->
-
     <main>
 
 
-        <!-- HERO -->
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
 
-        <section class="hero">
+        <header class="hero">
 
             <div class="container">
 
-                <div class="hero-content fade">
+                <div class="hero-content fade-in">
 
-                    <div class="eyebrow">
-                        ANDROID & SOFTWARE DEVELOPER
-                    </div>
+                    <p class="hero-name">
+                        Muhammad Azaan M R
+                    </p>
 
 
                     <h1>
-                        Muhammad<br>
-                        Azaan M R<span>.</span>
+                        AZN Labs
                     </h1>
 
 
+                    <div class="hero-subtitle">
+                        Premium Android Applications
+                    </div>
+
+
                     <p class="hero-description">
-                        I build practical software and mobile applications
-                        designed to solve real-world problems, with a focus
-                        on privacy, useful features, offline functionality,
-                        and giving users control over their data.
+                        Creating polished, useful Android applications
+                        with attention to
+                        <strong>design</strong>,
+                        <strong>usability</strong>,
+                        <strong>privacy</strong>
+                        and the details that make an app worth using.
                     </p>
 
 
                     <div class="buttons">
 
-                        <a href="#work"
-                           class="button primary">
-                            Explore my work
+                        <a href="#apps" class="button primary">
+                            Explore our apps
                         </a>
 
 
-                        <a href="https://github.com/azaanmr"
-                           target="_blank"
-                           rel="noopener"
-                           class="button secondary">
-                            GitHub ↗
+                        <a href="https://play.google.com/store/apps/dev?id=7607789726484682256" target="_blank"
+                            rel="noopener noreferrer" class="button secondary">
+                            Google Play ↗
                         </a>
 
                     </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             AZN LABS INTRO
+        ====================================================== -->
+
+        <section id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        AZN Labs
+                    </p>
+
+
+                    <h2>
+                        Premium Android applications.
+                    </h2>
+
+
+                    <p>
+                        AZN Labs is the Android app development brand of
+                        Muhammad Azaan M R, focused on creating polished,
+                        useful and thoughtfully designed mobile applications.
+                    </p>
+
+                </div>
+
+
+                <div class="intro-grid">
+
+
+                    <article class="intro-card large">
+
+                        <div class="labs-wordmark">
+                            AZN <span>Labs</span>
+                        </div>
+
+
+                        <p>
+                            From productivity tools to specialized
+                            utilities, AZN Labs develops Android
+                            applications with attention to design,
+                            reliability and the small details that make
+                            an application pleasant to use.
+                        </p>
+
+                    </article>
+
+
+                    <article class="intro-card">
+
+                        <h3>
+                            Our approach
+                        </h3>
+
+
+                        <p>
+                            Useful features come first. Privacy, user
+                            control and offline functionality receive
+                            particular attention whenever they make sense
+                            for the product.
+                        </p>
+
+                    </article>
 
                 </div>
 
@@ -839,37 +1668,35 @@
 
 
 
-        <!-- =========================
-             PROJECTS
-        ========================== -->
+        <!-- =====================================================
+             APPLICATIONS
+        ====================================================== -->
 
-        <section id="work">
+        <section id="apps">
 
             <div class="container">
 
+                <div class="section-heading">
 
-                <div class="section-header">
-
-                    <div class="section-label">
-                        Featured work
-                    </div>
+                    <p class="section-label">
+                        Applications
+                    </p>
 
 
                     <h2>
-                        Things I've built
+                        Apps from AZN Labs.
                     </h2>
 
 
                     <p>
-                        A selection of applications and web projects
-                        focused on solving practical problems.
+                        Android applications created to solve specific
+                        problems and provide useful everyday tools.
                     </p>
 
                 </div>
 
 
-
-                <div class="apps">
+                <div class="app-grid">
 
 
                     <!-- ANY ALARM -->
@@ -877,8 +1704,9 @@
                     <article class="app-card">
 
                         <div class="app-icon">
-                            <img src="/anyalarm.png"
-                                 alt="Any Alarm logo">
+
+                            <img src="/anyalarm.png" alt="Any Alarm app icon" width="76" height="76">
+
                         </div>
 
 
@@ -888,10 +1716,11 @@
 
 
                         <p>
-                            An advanced alarm application that uses
-                            wake-up challenges such as GPS tasks,
-                            mathematical problems, QR codes and
-                            barcodes to make waking up harder to ignore.
+                            An advanced alarm application designed to make
+                            waking up harder to ignore. It can use challenges
+                            such as GPS tasks, mathematical problems and
+                            QR or barcode scanning instead of relying only
+                            on a conventional alarm.
                         </p>
 
 
@@ -917,12 +1746,9 @@
 
 
                         <a class="app-link"
-                           href="https://play.google.com/store/apps/details?id=com.aznenterprises.anyalarm"
-                           target="_blank"
-                           rel="noopener">
-
+                            href="https://play.google.com/store/apps/details?id=com.aznenterprises.anyalarm"
+                            target="_blank" rel="noopener noreferrer">
                             View on Google Play →
-
                         </a>
 
                     </article>
@@ -934,8 +1760,9 @@
                     <article class="app-card">
 
                         <div class="app-icon">
-                            <img src="/net.png"
-                                 alt="NET Expense logo">
+
+                            <img src="/net.png" alt="NET Expense app icon" width="76" height="76">
+
                         </div>
 
 
@@ -946,7 +1773,7 @@
 
                         <p>
                             An offline-capable expense and budget manager
-                            for tracking daily spending, managing budgets,
+                            for tracking spending, managing budgets,
                             viewing analytics and keeping track of meals.
                         </p>
 
@@ -973,12 +1800,9 @@
 
 
                         <a class="app-link"
-                           href="https://play.google.com/store/apps/details?id=com.aznenterprises.tracksmith"
-                           target="_blank"
-                           rel="noopener">
-
+                            href="https://play.google.com/store/apps/details?id=com.aznenterprises.tracksmith"
+                            target="_blank" rel="noopener noreferrer">
                             View on Google Play →
-
                         </a>
 
                     </article>
@@ -990,8 +1814,9 @@
                     <article class="app-card">
 
                         <div class="app-icon">
-                            <img src="/minesaves.png"
-                                 alt="MineSaves logo">
+
+                            <img src="/minesaves.png" alt="MineSaves app icon" width="76" height="76">
+
                         </div>
 
 
@@ -1003,7 +1828,7 @@
                         <p>
                             A local file utility for Minecraft Bedrock
                             Edition that helps players manage world
-                            backups, organize saves and use custom
+                            backups, organize saved worlds and use custom
                             thumbnails.
                         </p>
 
@@ -1030,12 +1855,9 @@
 
 
                         <a class="app-link"
-                           href="https://play.google.com/store/apps/details?id=com.aznenterprises.mcpebackup"
-                           target="_blank"
-                           rel="noopener">
-
+                            href="https://play.google.com/store/apps/details?id=com.aznenterprises.mcpebackup"
+                            target="_blank" rel="noopener noreferrer">
                             View on Google Play →
-
                         </a>
 
                     </article>
@@ -1044,10 +1866,17 @@
 
                     <!-- WEBSUNeed -->
 
-                    <article class="app-card websuneed-card">
+                    <article class="app-card websuneed-card" id="websuneed">
+
+                        <p class="websuneed-kicker">
+                            Web Development
+                        </p>
+
 
                         <div class="websuneed-logo">
+
                             <span class="white">Webs</span><span class="blue">UN</span><span class="white">eed</span>
+
                         </div>
 
 
@@ -1058,11 +1887,11 @@
 
                         <p>
                             A web development agency focused on creating
-                            modern, high-performance websites and digital
-                            experiences for brands and businesses.
-                            The goal is to build websites that look
-                            professional, work smoothly and help businesses
-                            establish a stronger presence online.
+                            modern websites and digital experiences for
+                            businesses, brands and organizations. Its work
+                            combines thoughtful design, responsive interfaces
+                            and performance-focused development to create
+                            professional web experiences.
                         </p>
 
 
@@ -1087,13 +1916,9 @@
                         </div>
 
 
-                        <a class="app-link"
-                           href="https://websuneed.netlify.app/"
-                           target="_blank"
-                           rel="noopener">
-
+                        <a class="app-link" href="https://websuneed.netlify.app/" target="_blank"
+                            rel="noopener noreferrer">
                             Visit WebsUNeed →
-
                         </a>
 
                     </article>
@@ -1107,130 +1932,126 @@
 
 
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
+        <!-- =====================================================
+             ABOUT THE BRAND
+        ====================================================== -->
 
-        <section id="about">
+        <section>
 
             <div class="container">
 
+                <div class="section-heading">
 
-                <div class="section-header">
-
-                    <div class="section-label">
-                        About me
-                    </div>
+                    <p class="section-label">
+                        About AZN Labs
+                    </p>
 
 
                     <h2>
-                        Building things that are useful.
+                        Built around better apps.
                     </h2>
 
                 </div>
 
 
+                <div class="about-layout">
 
-                <div class="about-grid">
 
-
-                    <div class="about-text">
+                    <div class="about-copy">
 
                         <p>
-                            I'm Muhammad Azaan M R, an independent mobile
-                            app and software developer from Kerala, India.
+                            <strong>AZN Labs</strong> is an Android app
+                            development brand focused on creating polished,
+                            useful and thoughtfully designed mobile
+                            applications.
                         </p>
 
 
                         <p>
-                            I develop Android applications under my
-                            developer brand <strong>AZN Labs</strong>,
-                            associated with <strong>AZN Enterprises</strong>.
+                            The studio is led by
+                            <strong>Muhammad Azaan M R</strong>, with its
+                            work centered around turning practical ideas
+                            into reliable applications that people can
+                            actually use.
                         </p>
 
 
                         <p>
-                            I enjoy turning everyday problems into
-                            practical software. Rather than building
-                            applications simply for the sake of adding
-                            another app to the world, I prefer creating
-                            tools that have a clear purpose.
+                            AZN Labs pays attention to the details that
+                            shape an application beyond its basic features:
+                            interface design, user experience, reliability,
+                            privacy and the amount of control given to users.
                         </p>
 
 
                         <p>
-                            Alongside software and mobile applications,
-                            I also work on modern websites and web
-                            experiences through WebsUNeed.
-                        </p>
-
-
-                        <p>
-                            I'm continuously learning new technologies,
-                            experimenting with ideas, and improving the
-                            way I build software.
+                            Alongside Android applications, the work also
+                            extends into software, automation and web
+                            development. <strong>WebsUNeed</strong> handles
+                            the web-development side, creating modern
+                            websites and digital experiences for businesses,
+                            brands and organizations.
                         </p>
 
                     </div>
 
 
+                    <div class="principles">
 
-                    <div class="values">
+                        <div class="principle">
+
+                            <strong>
+                                Android first
+                            </strong>
+
+                            <span>
+                                Focused on creating polished Android
+                                applications.
+                            </span>
+
+                        </div>
 
 
-                        <div class="value">
+                        <div class="principle">
+
+                            <strong>
+                                Thoughtful design
+                            </strong>
+
+                            <span>
+                                Interfaces designed around clarity and
+                                usability.
+                            </span>
+
+                        </div>
+
+
+                        <div class="principle">
 
                             <strong>
                                 Privacy
                             </strong>
 
                             <span>
-                                Minimize unnecessary data collection.
+                                Avoid unnecessary data collection and
+                                dependencies.
                             </span>
 
                         </div>
 
 
-                        <div class="value">
+                        <div class="principle">
 
                             <strong>
-                                Offline-first
+                                Useful by design
                             </strong>
 
                             <span>
-                                Keep applications useful without
-                                depending unnecessarily on the internet.
+                                Applications built around real needs
+                                and problems.
                             </span>
 
                         </div>
-
-
-                        <div class="value">
-
-                            <strong>
-                                User control
-                            </strong>
-
-                            <span>
-                                Give users control over their own data
-                                and how applications behave.
-                            </span>
-
-                        </div>
-
-
-                        <div class="value">
-
-                            <strong>
-                                Practical software
-                            </strong>
-
-                            <span>
-                                Build tools that solve actual problems.
-                            </span>
-
-                        </div>
-
 
                     </div>
 
@@ -1242,31 +2063,35 @@
 
 
 
-        <!-- =========================
-             SKILLS
-        ========================== -->
+        <!-- =====================================================
+             DEVELOPMENT AREAS
+        ====================================================== -->
 
-        <section id="skills">
+        <section>
 
             <div class="container">
 
+                <div class="section-heading">
 
-                <div class="section-header">
-
-                    <div class="section-label">
-                        Interests
-                    </div>
+                    <p class="section-label">
+                        Development
+                    </p>
 
 
                     <h2>
-                        What I work with
+                        Areas of work.
                     </h2>
+
+
+                    <p>
+                        Android development is the primary focus, with
+                        related work across software, automation and the web.
+                    </p>
 
                 </div>
 
 
-
-                <div class="skills">
+                <div class="skill-list">
 
                     <span class="skill">
                         Android Development
@@ -1316,68 +2141,56 @@
 
 
 
-        <!-- =========================
+        <!-- =====================================================
              CONTACT
-        ========================== -->
+        ====================================================== -->
 
-        <section id="contact"
-                 class="contact">
+        <section id="contact" class="contact-section">
 
             <div class="container">
 
-
                 <div class="contact-box">
 
-
-                    <div class="section-label">
-                        Find me online
-                    </div>
+                    <p class="section-label">
+                        Contact & profiles
+                    </p>
 
 
                     <h2>
-                        Let's build something useful.
+                        Find AZN Labs online.
                     </h2>
 
 
                     <p>
-                        Explore my projects, applications and web
-                        development work through GitHub, Google Play
-                        and WebsUNeed.
+                        Explore the applications, projects and other work
+                        associated with Muhammad Azaan M R and AZN Labs.
                     </p>
 
 
                     <div class="buttons">
 
-
-                        <a href="https://github.com/azaanmr"
-                           target="_blank"
-                           rel="noopener"
-                           class="button primary">
-
+                        <a href="https://github.com/azaanmr" target="_blank" rel="noopener noreferrer"
+                            class="button primary">
                             GitHub ↗
-
                         </a>
 
 
-                        <a href="https://play.google.com/store/apps/dev?id=7607789726484682256"
-                           target="_blank"
-                           rel="noopener"
-                           class="button secondary">
+                        <a href="https://www.linkedin.com/in/muhammad-azaan-mr/" target="_blank"
+                            rel="noopener noreferrer" class="button secondary">
+                            LinkedIn ↗
+                        </a>
 
+
+                        <a href="https://play.google.com/store/apps/dev?id=7607789726484682256" target="_blank"
+                            rel="noopener noreferrer" class="button secondary">
                             Google Play ↗
-
                         </a>
 
 
-                        <a href="https://websuneed.netlify.app/"
-                           target="_blank"
-                           rel="noopener"
-                           class="button secondary">
-
+                        <a href="https://websuneed.netlify.app/" target="_blank" rel="noopener noreferrer"
+                            class="button secondary">
                             WebsUNeed ↗
-
                         </a>
-
 
                     </div>
 
@@ -1387,23 +2200,21 @@
 
         </section>
 
-
     </main>
 
 
 
-    <!-- =========================
+    <!-- =========================================================
          FOOTER
-    ========================== -->
+    ========================================================== -->
 
     <footer>
 
         <div class="container footer-inner">
 
-
             <span>
                 © <span id="year"></span>
-                Muhammad Azaan M R
+                Muhammad Azaan M R · AZN Labs
             </span>
 
 
@@ -1411,24 +2222,16 @@
                 Built with HTML, CSS & JavaScript
             </span>
 
-
         </div>
 
     </footer>
 
 
-
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
-
     <script>
-
         document.getElementById("year").textContent =
             new Date().getFullYear();
-
     </script>
 
-
 </body>
+
 </html>
